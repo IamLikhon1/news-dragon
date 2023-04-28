@@ -43,7 +43,7 @@ const router = createBrowserRouter([
         {
           path:':id',
           element:<Cetagory></Cetagory>,
-          loader:({params})=> fetch(`http://localhost:5000/catagory/${params.id}`)
+          loader:({params})=> fetch(`https://the-dragon-server-iamlikhon1.vercel.app/catagory/${params.id}`)
         },
         
       ]
@@ -55,7 +55,7 @@ const router = createBrowserRouter([
         {
           path:':id',
           element:<PrivateRoute><News></News></PrivateRoute>,
-          loader:({params})=> fetch (`http://localhost:5000/news/${params.id}`)
+          loader:({params})=> fetch (`https://the-dragon-server-iamlikhon1.vercel.app/news/${params.id}`)
         }
       ]
     }
